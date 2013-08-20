@@ -13,7 +13,7 @@ num_f = dim(features)[2]+1
 
 Y=c()
 X1=list()
-for(i in 1:200){
+for(i in 1:50){
     print(i)
     features = day_feature(data_list[[i]])
     m = matrix(data=rep(t(features),198),nrow=198,byrow=TRUE)
